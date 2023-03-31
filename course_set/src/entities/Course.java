@@ -23,6 +23,10 @@ public class Course {
 		return students;
 	}
 
+	public Instructor getInstructor() {
+		return instructor;
+	}
+
 	public void enroll(Student student) {
 		students.add(student);
 	}

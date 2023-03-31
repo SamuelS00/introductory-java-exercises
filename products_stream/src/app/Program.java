@@ -47,10 +47,6 @@ public class Program {
 
             double average = sumTotalProducts / products.size();
 
-            // double average = products.stream()
-            // .map(p -> p.getPrice())
-            // .reduce(0.0, (x, y) -> x + y) / products.size();
-
             Comparator<String> comparator = (s1, s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());
 
             List<String> belowAverageProducts = products.stream()
